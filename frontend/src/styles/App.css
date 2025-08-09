@@ -1,0 +1,95 @@
+/* App.css */
+
+body, .app {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Light theme variables */
+.app.light {
+  --bg: #f7f7f7;
+  --text: #222;
+  --navbar-bg: #fff;
+  --card-bg: #fff;
+  --input-bg: #fff;
+}
+
+/* Dark theme variables */
+.app.dark {
+  --bg: #222;
+  --text: #f7f7f7;
+  --navbar-bg: #333;
+  --card-bg: #2c2c2c;
+  --input-bg: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--navbar-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text);
+}
+
+.icon-btn {
+  font-size: 1.3rem;
+  background: var(--input-bg);
+  border: none;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: var(--text);
+}
+
+.icon-btn:hover {
+  background: var(--input-bg-hover);
+}
+
+.app.light .icon-btn:hover {
+  --input-bg-hover: #ddd;
+}
+
+.app.dark .icon-btn:hover {
+  --input-bg-hover: #555;
+}
+
+button.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Main content padding */
+main {
+  padding: 1rem;
+}
