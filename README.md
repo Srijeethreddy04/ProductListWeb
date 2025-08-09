@@ -32,4 +32,11 @@ Includes **Light/Dark Mode** for an improved user experience.
 ---
 
 ## 📂 Folder Structure
+ProductListWeb/
+│
+├── backend/ # Express API + MongoDB
+├── frontend/ # React UI
+├── package.json # Dependencies
+├── README.md
+└── .gitignore
 
